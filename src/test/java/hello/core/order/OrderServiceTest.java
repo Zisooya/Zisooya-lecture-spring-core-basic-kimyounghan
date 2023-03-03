@@ -1,17 +1,31 @@
 package hello.core.order;
 
+import hello.core.AppConfig;
 import hello.core.member.Grade;
 import hello.core.member.Member;
 import hello.core.member.MemberService;
 import hello.core.member.MemberServiceImpl;
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class OrderServiceTest {
-
+/*
+// 1. 직접 의존 관계를 생성하는 방식
     MemberService memberService = new MemberServiceImpl();
     OrderService orderService = new OrderServiceImpl();
+*/
+
+// 2. 설정 클래스(AppConfig)에서 의존 관계를 주입하는 방식
+    MemberService memberService;
+    OrderService orderService;
+    @BeforeEach
+    public void beforeEach() {
+        AppConfig appConfig = new AppConfig();
+        memberService = appConfig.memberService();
+        orderService = appConfig.orderService();
+    }
 
     @Test
     void createOrder() {
