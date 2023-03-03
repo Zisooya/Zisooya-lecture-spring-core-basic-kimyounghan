@@ -2,17 +2,37 @@ package hello.core.order;
 
 import hello.core.discount.DiscountPolicy;
 import hello.core.discount.FixDiscountPolicy;
+import hello.core.discount.RateDiscountPolicy;
 import hello.core.member.Member;
 import hello.core.member.MemberRepository;
 import hello.core.member.MemoryMemberRepository;
 
 public class OrderServiceImpl implements OrderService {
 
+/*
+// DIP, OCP를 위반하는 설계
     // 회원 찾기 위해 사용할 객체
     private final MemberRepository memberRepository = new MemoryMemberRepository();
 
-    // 할인 정책을 위해 사용할 객체
-    private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
+    // 할인 정책을 위해 사용할 객체 - 1. 1000원 고정 할인 금액
+    // private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
+
+    // 할인 정책을 위해 사용할 객체 - 2. 10% 할인율 적용
+    //private final DiscountPolicy discountPolicy = new RateDiscountPolicy();
+*/
+
+// DIP, OCP를 위반하지 않는 설계    
+    // 회원 찾기 위해 사용할 객체 - 인터페이스에만 의존하도록 설계.
+    private final MemberRepository memberRepository;
+
+    // 할인 정책을 위해 사용할 객체 - 인터페이스에만 의존하도록 설계.
+    private final DiscountPolicy discountPolicy;
+
+    // 생성자를 통해 각 인터페이스의 구현체로 무엇이 들어갈 지를 결정.
+    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+        this.memberRepository = memberRepository;
+        this.discountPolicy = discountPolicy;
+    }
 
     @Override
     public Order createOrder(Long memberId, String itemName, int itemPrice) {
