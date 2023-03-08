@@ -1,0 +1,60 @@
+[33m6c5cb78[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31mgithub/main[m[33m)[m HEAD@{0}: checkout: moving from main to main
+[33m6c5cb78[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31mgithub/main[m[33m)[m HEAD@{1}: branch: Reset to github/main
+[33m6c5cb78[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31mgithub/main[m[33m)[m HEAD@{2}: checkout: moving from f092974d44b44607ef07f05f93297e94fb3ac3af to main
+[33mf092974[m HEAD@{3}: commit: feat(component scan): Use component scan
+[33m60b5854[m HEAD@{4}: commit (merge): Merge branch 'main' of https://github.com/Zisooya/Zisooya-lecture-spring-core-basic-kimyounghan into HEAD
+[33mbe80810[m HEAD@{5}: commit: test(singleton): Test the single tone-@configuration
+[33me5322a0[m HEAD@{6}: commit (rebase): test(singleton): Test the single tone-@configuration
+[33m348e0c7[m HEAD@{7}: rebase (reword): test(singleton): Test the error singletone case - stateful
+[33mdc6c946[m HEAD@{8}: rebase: fast-forward
+[33mb634b5f[m HEAD@{9}: rebase (start): checkout b634b5f923d703938548ed39b84a64966a65114f
+[33m6c5cb78[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31mgithub/main[m[33m)[m HEAD@{10}: rebase (abort): updating HEAD
+[33md870b9a[m HEAD@{11}: rebase (reword): test(singleton): Test the error singletone case - stateful
+[33mdc6c946[m HEAD@{12}: rebase: fast-forward
+[33mb634b5f[m HEAD@{13}: rebase (start): checkout b634b5f923d703938548ed39b84a64966a65114f
+[33m6c5cb78[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31mgithub/main[m[33m)[m HEAD@{14}: commit (amend): test(singleton): Test the non-error singletone case-stateless
+[33m4d45117[m HEAD@{15}: rebase (abort): updating HEAD
+[33md92a778[m HEAD@{16}: rebase (reword): test(singleton): Test the error singletone case - stateful
+[33mdc6c946[m HEAD@{17}: rebase: fast-forward
+[33mb634b5f[m HEAD@{18}: rebase (start): checkout b634b5f923d703938548ed39b84a64966a65114f
+[33m4d45117[m HEAD@{19}: commit (amend): test(singleton): Test the non-error single tone case-stateless
+[33mfce84e7[m HEAD@{20}: rebase (abort): updating HEAD
+[33mfcb2e15[m HEAD@{21}: rebase (reword): test(singleton): Test the error singletone case - stateful
+[33mdc6c946[m HEAD@{22}: rebase: fast-forward
+[33mb634b5f[m HEAD@{23}: rebase (start): checkout b634b5f923d703938548ed39b84a64966a65114f
+[33mfce84e7[m HEAD@{24}: commit: test(singleton): Test the non-error single tone case-stateful
+[33m9defa8c[m HEAD@{25}: merge github/main: Merge made by the 'ort' strategy.
+[33mdc6c946[m HEAD@{26}: commit: test(singleton): Test the single tone error case - stateful
+[33mb634b5f[m HEAD@{27}: rebase (finish): returning to refs/heads/main
+[33mb634b5f[m HEAD@{28}: rebase (pick): test(singleton): Test the single tone case - spring
+[33m24327c6[m HEAD@{29}: rebase (reword): test(singleton): Test the single tone case
+[33m0faa413[m HEAD@{30}: rebase: fast-forward
+[33m4500db9[m HEAD@{31}: rebase (start): checkout 4500db9412d67a26c6123ef250f0499a70c718fd
+[33m9a32ed6[m HEAD@{32}: commit: test(singleton): Test the single tone case - spring
+[33m0faa413[m HEAD@{33}: commit: test(singleton): Test the single tone case.
+[33m4500db9[m HEAD@{34}: commit: test(non-singleton): Test the non-single tone case.
+[33m1677837[m HEAD@{35}: rebase (finish): returning to refs/heads/main
+[33m1677837[m HEAD@{36}: rebase (pick): test(spring container bean): Check a spring bean using BeanDefinition
+[33mf3f39ef[m HEAD@{37}: rebase (reword): feat(spring container bean): Create a spring bean using xml
+[33m0dddcab[m HEAD@{38}: rebase: fast-forward
+[33m202dd06[m HEAD@{39}: rebase (start): checkout 202dd06c925f19da6da64d69d23c5f3efdbb14f0
+[33m8512b32[m HEAD@{40}: commit (amend): test(spring container bean): Check a spring bean using BeanDefinition
+[33m9f1e6a0[m HEAD@{41}: commit: test(spring container bean): Check a spring bean using BeanDefinition.
+[33m0dddcab[m HEAD@{42}: commit (amend): feat(spring container bean): Create a spring bean using xml.
+[33mbb7e450[m HEAD@{43}: commit: test(spring container bean): Create a spring bean using xml.
+[33m202dd06[m HEAD@{44}: commit: test(spring container bean): Find spring container bean - extends
+[33m9622c6a[m HEAD@{45}: commit: test(spring container bean): Find spring container bean - same bean
+[33m9d8bf72[m HEAD@{46}: commit: test(spring container bean): Find spring container bean - basic
+[33m6621faa[m HEAD@{47}: commit: test(spring container bean): Find spring container bean
+[33mba97fb7[m HEAD@{48}: commit: refactor(spring framework): Change to the spring framework
+[33ma6bf23f[m HEAD@{49}: commit (merge): Merge remote-tracking branch 'github/main'
+[33m3d46e6e[m HEAD@{50}: commit: refactor(discount policy): Refactor AppConfig and Change the discount policy to the RateDiscountPolicy
+[33me290b7e[m HEAD@{51}: commit (amend): build(discount policy): Change the discount policy using DI
+[33m565974d[m HEAD@{52}: commit: feat(discount policy): Change the discount policy - DI
+[33m6843ce8[m HEAD@{53}: commit: feat(test of RateDiscountPolicy): Test RateDiscountPolicy class
+[33m22afa71[m HEAD@{54}: commit: feat(RateDiscountPolicy): Add RateDiscountPolicy class
+[33m8d243b5[m HEAD@{55}: merge github/main: Merge made by the 'ort' strategy.
+[33me1d9cbd[m HEAD@{56}: commit: feat(test of order service-test class): Test order services using the test class
+[33m49e64ff[m HEAD@{57}: rebase (finish): returning to refs/heads/main
+[33m49e64ff[m HEAD@{58}: rebase (pick): feat(test of order service-main method): Test order service using the main method
+[33m55bc8c8[m HEAD@{59}: rebase (pick): feat(implementation of an OrderService): Add an OrderServiceImpl class
