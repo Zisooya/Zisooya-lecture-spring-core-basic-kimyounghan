@@ -43,7 +43,6 @@ public class OrderServiceImpl implements OrderService {
     }
 */
     // 생성자를 통해 각 인터페이스의 구현체로 무엇이 들어갈 지를 결정.
-    @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
