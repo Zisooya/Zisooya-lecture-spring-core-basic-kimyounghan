@@ -6,47 +6,17 @@ import hello.core.discount.RateDiscountPolicy;
 import hello.core.member.Member;
 import hello.core.member.MemberRepository;
 import hello.core.member.MemoryMemberRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
+@RequiredArgsConstructor
 public class OrderServiceImpl implements OrderService {
 
-/*
-// DIP, OCP를 위반하는 설계
-    // 회원 찾기 위해 사용할 객체
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
-
-    // 할인 정책을 위해 사용할 객체 - 1. 1000원 고정 할인 금액
-    // private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
-
-    // 할인 정책을 위해 사용할 객체 - 2. 10% 할인율 적용
-    //private final DiscountPolicy discountPolicy = new RateDiscountPolicy();
-*/
-
-// DIP, OCP를 위반하지 않는 설계    
-
+    // @RequiredArgsConstructor: final이 붙은 객체를 파라미터로 받는 생성자를 만들어준다.
     private  final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
-
-/*
-    // setter 메소드(수정자)를 통한 의존관계 설정
-    @Autowired
-    public void setMemberRepository(MemberRepository memberRepository) {
-        this.memberRepository = memberRepository;
-    }
-
-
-    @Autowired
-    public void setDiscountPolicy(DiscountPolicy discountPolicy) {
-        this.discountPolicy = discountPolicy;
-    }
-*/
-    // 생성자를 통해 각 인터페이스의 구현체로 무엇이 들어갈 지를 결정.
-    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
-        this.memberRepository = memberRepository;
-        this.discountPolicy = discountPolicy;
-    }
 
     @Override
     public Order createOrder(Long memberId, String itemName, int itemPrice) {
