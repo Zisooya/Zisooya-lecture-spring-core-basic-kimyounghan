@@ -25,12 +25,23 @@ public class OrderServiceImpl implements OrderService {
 */
 
 // DIP, OCP를 위반하지 않는 설계    
-    // 회원 찾기 위해 사용할 객체 - 인터페이스에만 의존하도록 설계.
-    private final MemberRepository memberRepository;
 
-    // 할인 정책을 위해 사용할 객체 - 인터페이스에만 의존하도록 설계.
+    private  final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
 
+/*
+    // setter 메소드(수정자)를 통한 의존관계 설정
+    @Autowired
+    public void setMemberRepository(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
+
+
+    @Autowired
+    public void setDiscountPolicy(DiscountPolicy discountPolicy) {
+        this.discountPolicy = discountPolicy;
+    }
+*/
     // 생성자를 통해 각 인터페이스의 구현체로 무엇이 들어갈 지를 결정.
     @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
